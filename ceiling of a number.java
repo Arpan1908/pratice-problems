@@ -6,16 +6,20 @@ public class Pikai {
         System.out.println(ans);
     }
 
-    static int bnSearch(int[] arr, int t) {
+    static int bnSearch(int[] arr, int target) {
+        if(target > arr.length - 1){
+            return -1;
+        }
+        
         int s = 0;
         int e = arr.length - 1;
 
         while (s <= e) {
             int mid = s + (e - s) / 2;
 
-            if (arr[mid] == t) {
+            if (arr[mid] == target) {
                 return mid;
-            } else if (arr[mid] < t) {
+            } else if (arr[mid] < target) {
                 s = mid + 1;
             } else {
                 e = mid - 1;

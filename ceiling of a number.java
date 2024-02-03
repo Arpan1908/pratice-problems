@@ -1,13 +1,13 @@
 public class Pikai {
     public static void main(String args[]) {
         int[] arr = {2, 3, 4, 9, 14, 16, 18};
-        int target = 15;
+        int target = 5;
         int ans = bnSearch(arr, target);
         System.out.println(ans);
     }
 
     static int bnSearch(int[] arr, int target) {
-        if(target > arr.length - 1){
+        if(target > arr[arr.length - 1]){
             return -1;
         }
         

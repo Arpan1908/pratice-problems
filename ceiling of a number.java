@@ -1,4 +1,4 @@
-public class Pikai {
+public class Pikaii {
     public static void main(String args[]) {
         int[] arr = {2, 3, 4, 9, 14, 16, 18};
         int target = 5;

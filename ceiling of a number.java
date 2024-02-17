@@ -25,7 +25,7 @@ public class Pikaii {
                 e = mid - 1;
             }
         }
-        // If the target is not found, you can return -1 or any value to indicate that it's not present.
+        // If the target is not found, you can return -1 or any value to indicate that it's not present
         return arr[s];
     }
 }
